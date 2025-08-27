@@ -273,3 +273,145 @@ B) UI (Main) Thread\
 C) Native Module Thread\
 D) Worker Thread\
 **Answer:** B) UI (Main) Thread
+
+# React MCQs
+### Basic
+**1. What is JSX in React?**\
+A) A CSS framework\
+B) A syntax extension for JavaScript to write UI elements\
+C) A JSON format\
+D) A templating engine\
+**Answer:** B) A syntax extension for JavaScript to write UI elements
+
+**2. What is the purpose of `props` in React?**\
+A) To store internal component state\
+B) To pass data from parent to child components\
+C) To manage global state\
+D) To apply styles\
+**Answer:** B) To pass data from parent to child components
+
+**3. Which hook is used to declare state in functional components?**\
+A) `useEffect`\
+B) `useContext`\
+C) `useState`\
+D) `useReducer`\
+**Answer:** C) `useState`
+
+**4. What happens when you update state using `setState` (or `useState`)?**\
+A) The state updates immediately without re-rendering\
+B) The component re-renders with the new state\
+C) The state does not change\
+D) It clears all props\
+**Answer:** B) The component re-renders with the new state
+
+**5. Which React hook is used for side effects like API calls or subscriptions?**\
+A) `useEffect`\
+B) `useMemo`\
+C) `useReducer`\
+D) `useCallback`\
+**Answer:** A) `useEffect`
+
+**6. In React, what must you provide when rendering a list of elements?**\
+A) A `ref`\
+B) A `className`\
+C) A `key` prop\
+D) A `style`\
+**Answer:** C) A `key` prop
+
+**7. What is the difference between props and state?**\
+A) Props are mutable, state is immutable\
+B) Props are for parent-to-child data, state is managed inside a component\
+C) Both are used only in class components\
+D) They are identical\
+**Answer:** B) Props are for parent-to-child data, state is managed inside a component
+
+**8. Which hook is used for sharing data without passing props through every level of the component tree?**\
+A) `useMemo`\
+B) `useReducer`\
+C) `useContext`\
+D) `useEffect`\
+**Answer:** C) `useContext`
+
+**9. What is the default behavior of React components when state or props change?**\
+A) They unmount\
+B) They re-render\
+C) They stay the same\
+D) They reset all state\
+**Answer:** B) They re-render
+
+**10. What is the correct way to update state in React?**\
+A) `state.count = 5`\
+B) `setCount(count + 1)`\
+C) `this.count++`\
+D) `count = count + 1`\
+**Answer:** B) `setCount(count + 1)`
+
+**11. Which hook is used to access the previous state values or persist mutable values?**\
+A) `useReducer`\
+B) `useRef`\
+C) `useMemo`\
+D) `useEffect`\
+**Answer:** B) `useRef`
+
+**12. What is React.Fragment (`<>...</>`) used for?**\
+A) Wrapping multiple elements without adding extra nodes to the DOM tree\
+B) Styling components\
+C) Handling errors\
+D) Managing state\
+**Answer:** A) Wrapping multiple elements without adding extra nodes to the DOM tree
+
+**13. Which hook is best for expensive calculations that should not run on every render?**\
+A) `useEffect`\
+B) `useMemo`\
+C) `useRef`\
+D) `useState`\
+**Answer:** B) `useMemo`
+
+**14. In class components, which method is similar to `useEffect` with an empty dependency array?**\
+A) `componentDidUpdate`\
+B) `componentDidMount`\
+C) `componentWillUnmount`\
+D) `render`\
+**Answer:** B) `componentDidMount`
+
+**15. What is the purpose of `React.StrictMode`?**\
+A) To prevent re-renders\
+B) To highlight potential problems in an app during development\
+C) To enforce TypeScript types\
+D) To optimize performance automatically\
+**Answer:** B) To highlight potential problems in an app during development
+
+**16. What does `useReducer` provide compared to `useState`?**\
+A) A way to manage complex state logic with actions and reducers\
+B) A faster alternative to `useState`\
+C) A replacement for `useEffect`\
+D) A way to manage props\
+**Answer:** A) A way to manage complex state logic with actions and reducers
+
+**17. What is the correct way to conditionally render elements in React?**\
+A) Using `if` statements inside JSX\
+B) Using ternary operators or logical AND (`&&`)\
+C) Using `while` loops in JSX\
+D) Rendering everything and hiding with CSS\
+**Answer:** B) Using ternary operators or logical AND (`&&`)
+
+**18. What is the return value of `useState`?**\
+A) The state value and a function to update it\
+B) Only the state value\
+C) Only the setter function\
+D) An object with `state` and `setState` keys\
+**Answer:** A) The state value and a function to update it
+
+**19. Which hook should you use for cleanup (like removing event listeners)?**\
+A) `useReducer`\
+B) `useEffect` with a cleanup function\
+C) `useState`\
+D) `useMemo`\
+**Answer:** B) `useEffect` with a cleanup function
+
+**20. In React, why should keys in a list be unique?**\
+A) To avoid duplicate props\
+B) To help React identify which items changed, added, or removed\
+C) To improve styling\
+D) To prevent re-renders completely\
+**Answer:** B) To help React identify which items changed, added, or removed
