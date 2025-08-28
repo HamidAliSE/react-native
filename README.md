@@ -415,3 +415,144 @@ B) To help React identify which items changed, added, or removed\
 C) To improve styling\
 D) To prevent re-renders completely\
 **Answer:** B) To help React identify which items changed, added, or removed
+
+### Advanced
+**1. Why should you avoid updating state directly in React?**\
+A) It slows down performance\
+B) React won’t detect the change and won’t re-render\
+C) It clears props\
+D) It causes memory leaks\
+**Answer:** B) React won’t detect the change and won’t re-render
+
+**2. What is the purpose of `useCallback`?**\
+A) To memoize values\
+B) To memoize functions to prevent re-creation on every render\
+C) To execute functions only once\
+D) To replace `useEffect`\
+**Answer:** B) To memoize functions to prevent re-creation on every render
+
+**3. When does `useMemo` recompute a value?**\
+A) On every render\
+B) Only when one of its dependencies changes\
+C) Only once during the initial render\
+D) When `useEffect` is called\
+**Answer:** B) Only when one of its dependencies changes
+
+**4. What is the purpose of `React.memo`?**\
+A) To skip rendering a component if props have not changed\
+B) To store state globally\
+C) To replace `useEffect`\
+D) To batch state updates\
+**Answer:** A) To skip rendering a component if props have not changed
+
+**5. Which hook is best for synchronously reading layout or measuring elements?**\
+A) `useEffect`\
+B) `useLayoutEffect`\
+C) `useMemo`\
+D) `useReducer`\
+**Answer:** B) `useLayoutEffect`
+
+**6. Why should you use a stable function reference with `FlatList`’s `renderItem`?**\
+A) To prevent unnecessary re-renders of list items\
+B) To improve styling consistency\
+C) To avoid crashes\
+D) To reduce bundle size\
+**Answer:** A) To prevent unnecessary re-renders of list items
+
+**7. What is the difference between `useRef` and `useState`?**\
+A) `useRef` persists values without causing re-renders, `useState` triggers re-renders when updated\
+B) `useRef` works only in class components\
+C) `useState` stores DOM references, `useRef` stores values\
+D) They are identical\
+**Answer:** A) `useRef` persists values without causing re-renders, `useState` triggers re-renders when updated
+
+**8. Which hook allows you to build your own reusable logic across components?**\
+A) `useReducer`\
+B) `useEffect`\
+C) Custom hooks (functions starting with “use”)\
+D) `useRef`\
+**Answer:** C) Custom hooks (functions starting with “use”)
+
+**9. What is the purpose of `key` in a list?**\
+A) To optimize rendering by uniquely identifying list items\
+B) To apply styles\
+C) To act as a ref\
+D) To pass props\
+**Answer:** A) To optimize rendering by uniquely identifying list items
+
+**10. Why can updating state in a loop cause unexpected results?**\
+A) Because React batches state updates asynchronously\
+B) Because React prevents loops\
+C) Because state can only be updated once per render\
+D) Because props reset\
+**Answer:** A) Because React batches state updates asynchronously
+
+**11. What does the Context API solve?**\
+A) Re-renders\
+B) Passing props through deeply nested components (prop drilling)\
+C) Global error handling\
+D) Navigation\
+**Answer:** B) Passing props through deeply nested components (prop drilling)
+
+**12. What happens if you call a hook inside a loop or condition?**\
+A) It works normally\
+B) It breaks the Rules of Hooks and may cause errors\
+C) It optimizes performance\
+D) It runs only once\
+**Answer:** B) It breaks the Rules of Hooks and may cause errors
+
+**13. Which React feature batches multiple state updates into a single render cycle?**\
+A) Virtual DOM\
+B) Concurrent Mode\
+C) Automatic batching\
+D) Context API\
+**Answer:** C) Automatic batching
+
+**14. Which hook is best for handling complex state transitions with actions?**\
+A) `useState`\
+B) `useEffect`\
+C) `useReducer`\
+D) `useMemo`\
+**Answer:** C) `useReducer`
+
+**15. Why would you use `useImperativeHandle` with `forwardRef`?**\
+A) To expose custom methods from a child component to a parent\
+B) To style refs\
+C) To replace `useRef`\
+D) To batch renders\
+**Answer:** A) To expose custom methods from a child component to a parent
+
+**16. What is the advantage of `lazy()` and `Suspense` in React?**\
+A) They preload all components at startup\
+B) They allow code-splitting and lazy loading of components\
+C) They replace `useEffect`\
+D) They memoize props\
+**Answer:** B) They allow code-splitting and lazy loading of components
+
+**17. Why should you avoid using array indexes as keys in lists?**\
+A) They reduce performance\
+B) They can cause incorrect re-renders if list items change order\
+C) They are not valid in JSX\
+D) React does not allow them\
+**Answer:** B) They can cause incorrect re-renders if list items change order
+
+**18. Which hook should be used to listen to state or prop changes and run side effects accordingly?**\
+A) `useEffect`\
+B) `useMemo`\
+C) `useReducer`\
+D) `useCallback`\
+**Answer:** A) `useEffect`
+
+**19. What does `React.StrictMode` NOT do?**\
+A) Highlight unsafe lifecycles\
+B) Double-invoke functions in dev mode for testing\
+C) Optimize performance in production\
+D) Warn about deprecated APIs\
+**Answer:** C) Optimize performance in production
+
+**20. What is the main purpose of the Virtual DOM in React?**\
+A) To style UI elements\
+B) To provide a lightweight copy of the DOM for efficient re-renders\
+C) To manage navigation\
+D) To handle API calls\
+**Answer:** B) To provide a lightweight copy of the DOM for efficient re-renders
