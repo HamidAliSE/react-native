@@ -1,5 +1,98 @@
 # React MCQs
-### Basic
+
+### Core Concepts
+
+**What is the main purpose of the Virtual DOM in React?**\
+A) To style UI elements\
+B) To provide a lightweight copy of the DOM for efficient re-renders\
+C) To manage navigation\
+D) To handle API calls\
+**Answer:** B) To provide a lightweight copy of the DOM for efficient re-renders
+
+**What does `React.StrictMode` NOT do?**\
+A) Highlight unsafe lifecycles\
+B) Double-invoke functions in dev mode for testing\
+C) Optimize performance in production\
+D) Warn about deprecated APIs\
+**Answer:** C) Optimize performance in production
+
+**Why should you avoid using array indexes as keys in lists?**\
+A) They reduce performance\
+B) They can cause incorrect re-renders if list items change order\
+C) They are not valid in JSX\
+D) React does not allow them\
+**Answer:** B) They can cause incorrect re-renders if list items change order
+
+**What is the advantage of `lazy()` and `Suspense` in React?**\
+A) They preload all components at startup\
+B) They allow code-splitting and lazy loading of components\
+C) They replace `useEffect`\
+D) They memoize props\
+**Answer:** B) They allow code-splitting and lazy loading of components
+
+**What is the purpose of `key` in a list?**\
+A) To optimize rendering by uniquely identifying list items\
+B) To apply styles\
+C) To act as a ref\
+D) To pass props\
+**Answer:** A) To optimize rendering by uniquely identifying list items
+
+**Why should you use a stable function reference with `FlatList`’s `renderItem`?**\
+A) To prevent unnecessary re-renders of list items\
+B) To improve styling consistency\
+C) To avoid crashes\
+D) To reduce bundle size\
+**Answer:** A) To prevent unnecessary re-renders of list items
+
+**What is the purpose of `React.memo`?**\
+A) To skip rendering a component if props have not changed\
+B) To store state globally\
+C) To replace `useEffect`\
+D) To batch state updates\
+**Answer:** A) To skip rendering a component if props have not changed
+
+**In React, why should keys in a list be unique?**\
+A) To avoid duplicate props\
+B) To help React identify which items changed, added, or removed\
+C) To improve styling\
+D) To prevent re-renders completely\
+**Answer:** B) To help React identify which items changed, added, or removed
+
+**What is the correct way to conditionally render elements in React?**\
+A) Using `if` statements inside JSX\
+B) Using ternary operators or logical AND (`&&`)\
+C) Using `while` loops in JSX\
+D) Rendering everything and hiding with CSS\
+**Answer:** B) Using ternary operators or logical AND (`&&`)
+
+**What is the purpose of `React.StrictMode`?**\
+A) To prevent re-renders\
+B) To highlight potential problems in an app during development\
+C) To enforce TypeScript types\
+D) To optimize performance automatically\
+**Answer:** B) To highlight potential problems in an app during development
+
+**What is React.Fragment (`<>...</>`) used for?**\
+A) Wrapping multiple elements without adding extra nodes to the DOM tree\
+B) Styling components\
+C) Handling errors\
+D) Managing state\
+**Answer:** A) Wrapping multiple elements without adding extra nodes to the DOM tree
+
+**What is the default behavior of React components when state or props change?**\
+A) They unmount\
+B) They re-render\
+C) They stay the same\
+D) They reset all state\
+**Answer:** B) They re-render
+
+**What is the difference between props and state?**\
+A) Props are mutable, state is immutable\
+B) Props are for parent-to-child data, state is managed inside a component\
+C) Both are used only in class components\
+D) They are identical\
+**Answer:** B) Props are for parent-to-child data, state is managed inside a component
+
 **What is JSX in React?**\
 A) A CSS framework\
 B) A syntax extension for JavaScript to write UI elements\
@@ -13,6 +106,15 @@ B) To pass data from parent to child components\
 C) To manage global state\
 D) To apply styles\
 **Answer:** B) To pass data from parent to child components
+
+**In React, what must you provide when rendering a list of elements?**\
+A) A `ref`\
+B) A `className`\
+C) A `key` prop\
+D) A `style`\
+**Answer:** C) A `key` prop
+
+### Hooks
 
 **Which hook is used to declare state in functional components?**\
 A) `useEffect`\
@@ -35,33 +137,12 @@ C) `useReducer`\
 D) `useCallback`\
 **Answer:** A) `useEffect`
 
-**In React, what must you provide when rendering a list of elements?**\
-A) A `ref`\
-B) A `className`\
-C) A `key` prop\
-D) A `style`\
-**Answer:** C) A `key` prop
-
-**What is the difference between props and state?**\
-A) Props are mutable, state is immutable\
-B) Props are for parent-to-child data, state is managed inside a component\
-C) Both are used only in class components\
-D) They are identical\
-**Answer:** B) Props are for parent-to-child data, state is managed inside a component
-
 **Which hook is used for sharing data without passing props through every level of the component tree?**\
 A) `useMemo`\
 B) `useReducer`\
 C) `useContext`\
 D) `useEffect`\
 **Answer:** C) `useContext`
-
-**What is the default behavior of React components when state or props change?**\
-A) They unmount\
-B) They re-render\
-C) They stay the same\
-D) They reset all state\
-**Answer:** B) They re-render
 
 **What is the correct way to update state in React?**\
 A) `state.count = 5`\
@@ -77,13 +158,6 @@ C) `useMemo`\
 D) `useEffect`\
 **Answer:** B) `useRef`
 
-**What is React.Fragment (`<>...</>`) used for?**\
-A) Wrapping multiple elements without adding extra nodes to the DOM tree\
-B) Styling components\
-C) Handling errors\
-D) Managing state\
-**Answer:** A) Wrapping multiple elements without adding extra nodes to the DOM tree
-
 **Which hook is best for expensive calculations that should not run on every render?**\
 A) `useEffect`\
 B) `useMemo`\
@@ -98,26 +172,12 @@ C) `componentWillUnmount`\
 D) `render`\
 **Answer:** B) `componentDidMount`
 
-**What is the purpose of `React.StrictMode`?**\
-A) To prevent re-renders\
-B) To highlight potential problems in an app during development\
-C) To enforce TypeScript types\
-D) To optimize performance automatically\
-**Answer:** B) To highlight potential problems in an app during development
-
 **What does `useReducer` provide compared to `useState`?**\
 A) A way to manage complex state logic with actions and reducers\
 B) A faster alternative to `useState`\
 C) A replacement for `useEffect`\
 D) A way to manage props\
 **Answer:** A) A way to manage complex state logic with actions and reducers
-
-**What is the correct way to conditionally render elements in React?**\
-A) Using `if` statements inside JSX\
-B) Using ternary operators or logical AND (`&&`)\
-C) Using `while` loops in JSX\
-D) Rendering everything and hiding with CSS\
-**Answer:** B) Using ternary operators or logical AND (`&&`)
 
 **What is the return value of `useState`?**\
 A) The state value and a function to update it\
@@ -133,14 +193,6 @@ C) `useState`\
 D) `useMemo`\
 **Answer:** B) `useEffect` with a cleanup function
 
-**In React, why should keys in a list be unique?**\
-A) To avoid duplicate props\
-B) To help React identify which items changed, added, or removed\
-C) To improve styling\
-D) To prevent re-renders completely\
-**Answer:** B) To help React identify which items changed, added, or removed
-
-### Advanced
 **Why should you avoid updating state directly in React?**\
 A) It slows down performance\
 B) React won’t detect the change and won’t re-render\
@@ -162,26 +214,12 @@ C) Only once during the initial render\
 D) When `useEffect` is called\
 **Answer:** B) Only when one of its dependencies changes
 
-**What is the purpose of `React.memo`?**\
-A) To skip rendering a component if props have not changed\
-B) To store state globally\
-C) To replace `useEffect`\
-D) To batch state updates\
-**Answer:** A) To skip rendering a component if props have not changed
-
 **Which hook is best for synchronously reading layout or measuring elements?**\
 A) `useEffect`\
 B) `useLayoutEffect`\
 C) `useMemo`\
 D) `useReducer`\
 **Answer:** B) `useLayoutEffect`
-
-**Why should you use a stable function reference with `FlatList`’s `renderItem`?**\
-A) To prevent unnecessary re-renders of list items\
-B) To improve styling consistency\
-C) To avoid crashes\
-D) To reduce bundle size\
-**Answer:** A) To prevent unnecessary re-renders of list items
 
 **What is the difference between `useRef` and `useState`?**\
 A) `useRef` persists values without causing re-renders, `useState` triggers re-renders when updated\
@@ -196,13 +234,6 @@ B) `useEffect`\
 C) Custom hooks (functions starting with “use”)\
 D) `useRef`\
 **Answer:** C) Custom hooks (functions starting with “use”)
-
-**What is the purpose of `key` in a list?**\
-A) To optimize rendering by uniquely identifying list items\
-B) To apply styles\
-C) To act as a ref\
-D) To pass props\
-**Answer:** A) To optimize rendering by uniquely identifying list items
 
 **Why can updating state in a loop cause unexpected results?**\
 A) Because React batches state updates asynchronously\
@@ -246,37 +277,9 @@ C) To replace `useRef`\
 D) To batch renders\
 **Answer:** A) To expose custom methods from a child component to a parent
 
-**What is the advantage of `lazy()` and `Suspense` in React?**\
-A) They preload all components at startup\
-B) They allow code-splitting and lazy loading of components\
-C) They replace `useEffect`\
-D) They memoize props\
-**Answer:** B) They allow code-splitting and lazy loading of components
-
-**Why should you avoid using array indexes as keys in lists?**\
-A) They reduce performance\
-B) They can cause incorrect re-renders if list items change order\
-C) They are not valid in JSX\
-D) React does not allow them\
-**Answer:** B) They can cause incorrect re-renders if list items change order
-
 **Which hook should be used to listen to state or prop changes and run side effects accordingly?**\
 A) `useEffect`\
 B) `useMemo`\
 C) `useReducer`\
 D) `useCallback`\
 **Answer:** A) `useEffect`
-
-**What does `React.StrictMode` NOT do?**\
-A) Highlight unsafe lifecycles\
-B) Double-invoke functions in dev mode for testing\
-C) Optimize performance in production\
-D) Warn about deprecated APIs\
-**Answer:** C) Optimize performance in production
-
-**What is the main purpose of the Virtual DOM in React?**\
-A) To style UI elements\
-B) To provide a lightweight copy of the DOM for efficient re-renders\
-C) To manage navigation\
-D) To handle API calls\
-**Answer:** B) To provide a lightweight copy of the DOM for efficient re-renders
