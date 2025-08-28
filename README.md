@@ -1,6 +1,9 @@
 # Topics
 
 ### [React Basics](https://github.com/HamidAliSE/react-native/blob/main/react-basics.md)
+### React Native Styling
+### React Native Debugging
+### React Native Performance
 
 # MCQs
 
