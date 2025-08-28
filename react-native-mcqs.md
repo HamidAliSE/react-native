@@ -1,5 +1,5 @@
 # React Native MCQs
-### Basic
+### Core Concepts
 **1. Which language is primarily used to build React Native apps?**\
 A) Java\
 B) Swift\
@@ -13,6 +13,21 @@ B) ReactJS uses HTML, React Native uses native components\
 C) React Native can access device APIs\
 D) All of the above\
 **Answer:** D) All of the above
+
+### Core Components
+**20. Which of the following is NOT a core React Native component?**\
+A) `<Image>`\
+B) `<View>`\
+C) `<ScrollView>`\
+D) `<Fragment>`\
+**Answer:** D) `<Fragment>`
+
+**13. In React Native, text must always be wrapped inside which component?**\
+A) `<Label>`\
+B) `<Text>`\
+C) `<Paragraph>`\
+D) `<View>`\
+**Answer:** B) `<Text>`
 
 **4. Which component is used to display scrollable content in React Native?**\
 A) `<ListView>`\
@@ -28,47 +43,12 @@ C) `<Box>`\
 D) `<Layout>`\
 **Answer:** A) `<View>`
 
-**6. Which of the following is true about React Native styling?**\
-A) Uses inline styles only\
-B) Uses CSS directly\
-C) Uses JavaScript objects to define styles\
-D) Doesn’t support styling\
-**Answer:** C) Uses JavaScript objects to define styles
-
 **7. What is the purpose of the TouchableOpacity component?**\
 A) To create animations\
 B) To handle touch events with opacity feedback\
 C) To add navigation between screens\
 D) To create modals\
 **Answer:** B) To handle touch events with opacity feedback
-
-**8. Which hook is commonly used to manage state in React Native functional components?**\
-A) useEffect\
-B) useReducer\
-C) useState\
-D) useContext\
-**Answer:** C) useState
-
-**9. Which navigation library is most widely used in React Native?**\
-A) React Router\
-B) React Native Navigator\
-C) React Navigation\
-D) Native Router\
-**Answer:** C) React Navigation
-
-**10. What is the default thread used to run JavaScript code in React Native?**\
-A) Main UI Thread\
-B) JS Thread\
-C) Native Module Thread\
-D) Worker Thread\
-**Answer:** B) JS Thread
-
-**11. Which command runs a React Native app on an Android emulator?**\
-A) npm start android\
-B) npx react-native android\
-C) npx react-native run-android\
-D) expo run android\
-**Answer:** C) npx react-native run-android
 
 **12. Which component is best suited for rendering a long list of data efficiently?**\
 A) `<ScrollView>`\
@@ -77,12 +57,13 @@ C) `<View>`\
 D) `<List>`\
 **Answer:** B) `<FlatList>`
 
-**13. In React Native, text must always be wrapped inside which component?**\
-A) `<Label>`\
-B) `<Text>`\
-C) `<Paragraph>`\
-D) `<View>`\
-**Answer:** B) `<Text>`
+### Styling
+**6. Which of the following is true about React Native styling?**\
+A) Uses inline styles only\
+B) Uses CSS directly\
+C) Uses JavaScript objects to define styles\
+D) Doesn’t support styling\
+**Answer:** C) Uses JavaScript objects to define styles
 
 **14. How do you apply multiple styles in React Native?**\
 A) `style={style1 + style2}`\
@@ -91,6 +72,39 @@ C) `style={merge(style1, style2)}`\
 D) `style={style1, style2}`\
 **Answer:** B) `style={[style1, style2]}`
 
+### Hooks
+**8. Which hook is commonly used to manage state in React Native functional components?**\
+A) useEffect\
+B) useReducer\
+C) useState\
+D) useContext\
+**Answer:** C) useState
+
+### Navigation
+**9. Which navigation library is most widely used in React Native?**\
+A) React Router\
+B) React Native Navigator\
+C) React Navigation\
+D) Native Router\
+**Answer:** C) React Navigation
+
+### Threads
+**10. What is the default thread used to run JavaScript code in React Native?**\
+A) Main UI Thread\
+B) JS Thread\
+C) Native Module Thread\
+D) Worker Thread\
+**Answer:** B) JS Thread
+
+### Development
+**11. Which command runs a React Native app on an Android emulator?**\
+A) npm start android\
+B) npx react-native android\
+C) npx react-native run-android\
+D) expo run android\
+**Answer:** C) npx react-native run-android
+
+### Expo
 **15. Which of the following is true about Expo?**\
 A) It simplifies building React Native apps\
 B) It requires Android Studio or Xcode for basic setup\
@@ -98,6 +112,7 @@ C) It doesn’t support over-the-air updates\
 D) It is not open-source\
 **Answer:** A) It simplifies building React Native apps
 
+### Lifecycle of a Component
 **16. Which lifecycle method is used in React Native class components to perform side effects after the first render?**\
 A) `componentDidMount()`\
 B) `componentWillMount()`\
@@ -105,6 +120,7 @@ C) `componentWillUnmount()`\
 D) `componentDidUpdate()`\
 **Answer:** A) componentDidMount()
 
+### Flex Box
 **17. What is the default flex direction in React Native?**\
 A) `row`\
 B) `column`\
@@ -112,6 +128,7 @@ C) `row-reverse`\
 D) `inherit`\
 **Answer:** B) `column`
 
+### Metro
 **18. Which command starts the Metro bundler?**\
 A) `npm start`\
 B) `npx react-native start`\
@@ -119,19 +136,13 @@ C) `expo start`\
 D) All of the above (depending on setup)\
 **Answer:** D) All of the above (depending on setup)
 
+### Debugging
 **19. How do you debug a React Native app?**\
 A) Using Chrome DevTools\
 B) Using React Native Debugger\
 C) Using Flipper\
 D) All of the above\
 **Answer:** D) All of the above
-
-**20. Which of the following is NOT a core React Native component?**\
-A) `<Image>`\
-B) `<View>`\
-C) `<ScrollView>`\
-D) `<Fragment>`\
-**Answer:** D) `<Fragment>`
 
 ### Advanced
 **1. In React Native, how are native modules typically connected to JavaScript code?**\
